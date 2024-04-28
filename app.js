@@ -89,7 +89,7 @@ function onFileChange(event){
         ctx.drawImage(image, 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
     };
 }
- 
+
 canvas.addEventListener("mousemove",onMove);
 canvas.addEventListener("mousedown", startPainting);
 canvas.addEventListener("mouseup", cancelPainting);
