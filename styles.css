@@ -47,10 +47,31 @@ input#color{
     background-color: white;
 }
 
-button{
+button, label{
     all: unset;
-    padding: 5px;
+    padding: 10px 0px;
     text-align: center;
-    background-color: rgb(251, 72, 186);
+    background-color: #f977c9;
     color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: opacity linear .1s;
+}
+
+button:hover{
+    opacity: 0.85s;
+}
+
+input#file{
+    display: none;
+}
+
+input#text {
+    all: unset;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: white;
+    font-weight: 500;
+    border-radius: 10px;
 }
