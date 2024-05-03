@@ -52,12 +52,6 @@ function cancelPainting(){
     ctx.beginPath();
 }
 
-// function cancelPainting(){
-//     isPainting = false;
-//     ctx.fill();
-//     ctx.beginPath();
-// }
-
 function onLineWidthChange(event){
     ctx.lineWidth=event.target.value;   
 }
@@ -119,17 +113,12 @@ function onSaveClick(){
     a.click();
 }
 
-// function ondrawfillClick{
-
-// }
-
 canvas.addEventListener("dblclick", onDoubleClick);
 canvas.addEventListener("mousemove",onMove);
 canvas.addEventListener("mousedown", startPainting);
 canvas.addEventListener("mouseup", cancelPainting);
 canvas.addEventListener("mouseleave", cancelPainting);
 canvas.addEventListener("click",onCanvnasClick);
-//canvas.addEventListener("click", ondrawfillClick);
 
 lineWidth.addEventListener("change", onLineWidthChange);
 color.addEventListener("change", onColorChange);
@@ -141,4 +130,3 @@ destroyBtn.addEventListener("click", onDestroyClick);
 earseBtn.addEventListener("click", onEraserClick);
 fileInput.addEventListener("change", onFileChange);
 saveBtn.addEventListener("click", onSaveClick);
-//drawfill.addEventListener("click", ondrawfillClick);
